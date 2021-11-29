@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <tittle></tittle>
+        <link rel="stylesheet" href="stylesheet/style.css">
+        <script src="Javascript/formvalidate.js"></script>
+    </head>
+    <body>
+        <form method="post">
+            <div>
+            <h1>Submit Your Application</h1><br>
+            <label>Name as per ID proof</label><br>
+             
+            <input type="text" id="name" ><br><br>
+            <label id="lblname" style="visibility: hidden;">Name is Required</label><br>
+
+            <label for="email">E-Mail</label><br>
+            <input type="text" id="email"><br><br>
+            <label id="lblemail" style="visibility: hidden;">Email is Required</label><br>
+
+            
+            <label>Current Adress</label><br><br>
+            <input type="text" id="streetname"><br><br>
+            <input type="text" id="city"><br><br>
+            <input type="number" id="zipcode"><br><br>
+            <select  id="selector">
+                <option value="TamilNadu">TamilNadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Telungana">Telungana</option>
+                <option value="Jammu & kashmir">Jammu & kashmir</option>
+            </select><br><br>
+
+            <label>Permanent Address </label>
+            <input type="checkbox" id="address">
+            <label>same as Current address </label><br>
+            <input type="text" id="streetname1"><br><br>
+            <input type="text" id="city1"><br><br>
+            <input type="number" id="zipcode1"><br><br>
+            <select id="selector1">
+                <option value="TamilNadu">TamilNadu</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Telungana">Telungana</option>
+                <option value="Jammu & kashmir">Jammu & kashmir</option>
+            </select>
+            <br><br>
+        </div>
+        <div>
+            <label>Father's Name</label><br>
+            <input type="text" id="fathername"><br><br>
+
+            <label>Date Of Birth</label><br> 
+            <input type="text" id="dob"><br>
+            <label id="lbldob" style="visibility: hidden;">Date of birth Required</label><br>
+
+            <label>Mobile Number</label><br>
+            <input type="text" id="number"><br><br>
+            <label id="lblmob" style="visibility: hidden;">Mobile Number Required</label> 
+
+        </div>
+            <label>Please Upload Photo of Yourself</label><br><br>
+            <input type="file" id="image" name="fileuploading"><br><br><br><br>
+
+            <button type="button" id="sumbitbtn" onclick="validate()">Submit</button>
+        </form>
+    </body>
+</html>

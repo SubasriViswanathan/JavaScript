@@ -1,0 +1,14 @@
+button
+{
+width:90px;
+height:30px;
+}
+input [type=text]
+{
+    width: 190px;
+    height: 30px;
+}
+body
+{
+    padding-left: 20%;
+}
